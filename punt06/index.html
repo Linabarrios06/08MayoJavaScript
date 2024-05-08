@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Empleados</title>
+    <link rel="stylesheet" href="/punt06/css/style.css">
+    <style>
+        /* Estilo del contenedor principal */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        /* Estilo de los contenedores de información (libro y usuario) */
+        .info {
+            width: 48%;  /* El contenedor ocupará el 48% del ancho */
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Estilo para los botones */
+        button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Contenedor de información del empleado -->
+        <div class="info">
+            <h2>Registro Del Empleado</h2>
+            <!-- Formulario para agregar un nuevo empleado -->
+            <form id="employee-form">
+                <label for="employee-name"><strong>Nombres:</strong></label>
+                <input type="text" id="employee-name" />
+                <br><br>
+                <label for="employee-position"><strong>Cargo:</strong></label>
+                <input type="text" id="employee-position" />
+                <br><br>
+                <button type="submit">Agregar Empleado</button>
+            </form>
+        </div>
+
+        <!-- Contenedor de información de empleados registrados -->
+        <div class="info">
+            <h2>Información de Empleados Registrados</h2>
+            <!-- Lista de empleados registrados -->
+            <ul id="employee-list"></ul>
+        </div>
+    </div>
+
+    <script src="/punt06/js/app.js"></script>
+</body>
+
+</html>

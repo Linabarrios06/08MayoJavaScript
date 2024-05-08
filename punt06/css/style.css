@@ -1,0 +1,83 @@
+/* Estilo general */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f2f9;
+    color: #4a4a4a;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.info {
+    width: 48%;
+    border: 2px solid #a486ff; /* Color del borde más intenso */
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f0e8ff; /* Color de fondo más intenso */
+    border-radius: 20px; /* Bordes más redondeados */
+}
+
+/* Estilo para el cuadro de registro de empleados */
+#employee-form-container {
+    background-color: #e1bee7; /* Tonos morados claros */
+    padding: 20px;
+    border-radius: 20px; /* Bordes más redondeados */
+}
+
+/* Estilo para el cuadro de información del registrado */
+#registered-info-container {
+    background-color: #c8e6c9; /* Tonos verdes claros */
+    padding: 20px;
+    border-radius: 20px; /* Bordes más redondeados */
+}
+
+button {
+    margin-top: 10px;
+    background-color: #7e57c2;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 8px; /* Bordes más redondeados */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #5e35b1;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: calc(100% - 32px); /* Ajuste del ancho para compensar el padding */
+    padding: 12px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 8px; /* Bordes más redondeados */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    border-color: #7e57c2;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+strong {
+    color: #7e57c2;
+    font-weight: bold;
+    font-size: 1.1em; /* Tamaño de fuente aumentado */
+}
